@@ -21,6 +21,13 @@ This project fetches Google's [earthview images](https://earthview.withgoogle.co
 5. Optional: Automatically start *EarthviewWallpaper* on login by running `mv local.earthviewwallpaper.agent.plist ~/Library/LaunchAgents`
 
 
+## Installation Guide (GNOME 3/Ubuntu 17.10 and above):
+1. Clone this repository to your local machine
+2. Install the required dependencies by running `pip3 install -r requirements.txt` from the root of your cloned repository
+3. Start the app manually by running `python3 your-earthview-path/app.py`
+4. Or let it autostart on GNOME start by following these [instructions](https://askubuntu.com/a/544431)
+
+
 ## Open Tasks:
 * Change ALL desktops for OS X
 * Handle network errors
