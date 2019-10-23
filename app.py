@@ -39,10 +39,13 @@ def main():
         icon = QIcon("icon.ico")
     elif sys.platform.startswith("darwin"):
         icon = QIcon("icon.icns")
+    else:
+        icon = None
 
     # Create the tray
     tray = QSystemTrayIcon()
-    tray.setIcon(icon)
+    if icon:
+        tray.setIcon(icon)
     tray.setVisible(True)
 
     # Create the background thread
